@@ -3,38 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-        <div class="layout">
-        <h1>Advanced AI Solutions</h1>
-        <p class="paragraph">We provide cutting-edge AI solutions to help businesses optimize their operations and drive innovation. Our team of experts specializes in machine learning, natural language processing, and computer vision to deliver customized solutions that meet your unique needs.</p>
+    <main class="registration">
+       <h1> User Registration Form</h1>
+       <p class="paragraph"> Please fill in all the required fields below.</p>
+       <div class="name">
+        <label class="name">Name:</label>
+        <input type="text"  id="name" placeholder="Enter your name">
+       </div>
+       <div class="email">
+        <label class="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email address"> 
+       </div>
+       <div class="input-group">
+        <label class="departments" for="department">Department</label>
+        <select class="dep" id="department">
+            <option value="" disabled selected>Select your department</option>
+            <option value="chem">Chemistry</option>
+            <option value="bio">Biology</option>
+            <option value="eng">English</option>
+            <option value="cs">Computer Science</option>
+            <option value="phy">Physics</option>
+        </select>
+       </div>
+       <label class="research">Research Interests:</label>
+    <div class="checkbox">
+        <label class="checkbox-item">Artificial Intelligence
+        <input  class="class" type="checkbox" name="interest" value="ai"> 
+        </label>
+        <label class="research">Human
+            <input class="class" type="checkbox" name="interest" value="human">
+        </label> 
+        <label class="research">Literature
+            <input class="class" type="checkbox" name="interest" value="literature">
+        </label>
+        <label class="research">Chemical Engineering
+            <input class="class" type="checkbox" name="interest" value="chem">
+        </label>
+        <label class="research">
+            Quantum Computing
+            <input class="class" type="checkbox" name="interest" value="quantum">
+        </label>
     </div>
-    <h2 class="include">Our services include:</h2>
-    <div class="box">
-        <div class="box1">
-        <i class="fa-solid fa-hexagon-nodes"></i>
-  <script src="https://kit.fontawesome.com" crossorigin="anonymous"></script>
-
-</i>
-        <h3 class="heading">Machine Learning</h3>
-        <p class="paragraph1">Your Innovation Roadmap Starts Here. Click to view our full AI capability folder</p>
-        
+    <div class="bio">
+        <label class="bio" >
+            Short bio and research summary:
+            <textarea class="bio" placeholder="Briefly describe your current research focus..."></textarea>
+        </label>
     </div>
-    <div class="box2">
-        <i class="fa-solid fa-brain"></i>
-        <h3 >Deep learning</h3>
-        <p class="paragraph">Leverage advanced neural networks to solve complex problems with unprecedented accuracy.</p> 
+    <div class="btn">
+        <button class="submit" type="submit">Complete Registration</button>
     </div>
-    <div class="box3">
-        <i class="fa-solid fa-chart-pie"></i>
-        <h3>Preductive Analysis</h3>
-        <p class="paragraph">Stay ahead of the curve by forecasting market trends using historical data analysis.</p>
-    </div>
-    </div>
+    </main>
 </body>
-</head>
 </html>
